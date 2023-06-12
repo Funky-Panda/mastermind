@@ -22,7 +22,7 @@ def createTable(data):
     transposed_data = list(map(list, zip(*data)))
 
     table_headers = [f"Attemp {i+1}" for i in range(len(data))]
-    table = tabulate(transposed_data, headers=table_headers, tablefmt="grid")
+    table = tabulate(transposed_data, headers=table_headers, tablefmt="heavy_outline")
 
     print(table)
 
