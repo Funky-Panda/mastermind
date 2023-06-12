@@ -61,7 +61,7 @@ colours = getColours()
 file = open("answer.txt", "w")
 file.write(", ".join(colours))
 file.close()
-
+ 
 correctPositions = 0
 correctColours = 0
 attempts = 0
