@@ -17,7 +17,6 @@ def getColours():
 
 def createTable(data):
     os.system("clear")
-
     # Transpose the data list
     transposed_data = list(map(list, zip(*data)))
 
@@ -66,6 +65,7 @@ correctPositions = 0
 correctColours = 0
 attempts = 0
 while correctPositions < 4:
+    print("All Colours: "+", ".join(Allcolours))
     pickedColours = []
     correctPositions = 0
     correctColours = 0
